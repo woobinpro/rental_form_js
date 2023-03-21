@@ -8,7 +8,7 @@ $(function(){
       console.log(signaturePad.toDataURL());
     });
     $('#front_idcard').dmUploader({ //
-        url: 'https://82.165.190.74:3001/api/uploadID',
+        url: 'https://trackyourcamper.com:3001/api/uploadID',
         fileName:'file',
         maxFileSize: 3000000, // 3 Megs 
         onDragEnter: function(){
@@ -34,7 +34,7 @@ $(function(){
         }
       });
       $('#back_idcard').dmUploader({ //
-        url: 'https://82.165.190.74:3001/api/uploadID',
+        url: 'https://trackyourcamper.com:3001/api/uploadID',
         fileName:'file',
         maxFileSize: 3000000, // 3 Megs 
         onDragEnter: function(){
@@ -60,7 +60,7 @@ $(function(){
         }
       });
       $('#selfie').dmUploader({ //
-        url: 'https://82.165.190.74:3001/api/uploadID',
+        url: 'https://trackyourcamper.com:3001/api/uploadID',
         fileName:'file',
         maxFileSize: 3000000, // 3 Megs 
         onDragEnter: function(){
