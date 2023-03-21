@@ -4,6 +4,9 @@ $(function(){
     $('#clear_signature').click(function(){
         signaturePad.clear();
     });
+    $('#submit').click(function(){
+      console.log(signaturePad.toDataURL());
+    });
     $('#front_idcard').dmUploader({ //
         url: 'https://82.165.190.74:3001/api/uploadID',
         fileName:'file',
