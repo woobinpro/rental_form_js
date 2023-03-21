@@ -23,6 +23,8 @@ $(function(){
         onUploadSuccess: function(id, data){
           console.log('Server Response for file #' + id + ': ' + JSON.stringify(data));
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
+          $(this).children('img')[0].attr('src','http://82.165.190.74/images/'+data.name);
+          $(this).children('img')[0].show();
         },
         onUploadError: function(id, xhr, status, message){
           console.log('danger' + id + ":" + status+ "-" + message);
