@@ -109,7 +109,7 @@ body {
     justify-content: space-between;
 }
 .dm-uploader .btn-primary {
-    margin: 12px auto;
+    margin: 12px;
     min-width: 166px;
 }
 .dm-uploader img {
@@ -461,6 +461,9 @@ body {
   .dm-uploader  h3 {
     width: auto;
   }
+  .dm-uploader .btn-primary {
+    margin: 12px auto;
+}
 }
 @media screen and (min-width: 1199px) {
 	.form-v1-content {
