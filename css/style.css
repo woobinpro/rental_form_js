@@ -76,6 +76,7 @@ body {
 }
 .card-images {
   text-align: right;
+  margin: 10px 0;
 }
 .card-images i {
   font-size: 40px;
@@ -108,7 +109,7 @@ body {
     justify-content: space-between;
 }
 .dm-uploader .btn-primary {
-    margin: 12px;
+    margin: 12px auto;
     min-width: 166px;
 }
 .dm-uploader img {
@@ -117,8 +118,8 @@ body {
 .dm-uploader h3 {
     width: 80%;
     padding: 10px 10px;
-    border: 3px dotted #777;
-    color: #555;
+    border: 2px dotted #ccc;
+    color: #777;
     margin: 5px;
 }
 .btn-primary {
@@ -451,6 +452,15 @@ body {
     .wrapper {
         display: none;
     }
+}
+@media screen and (max-width: 550px) {
+	.dm-uploader {
+    display: block !important;
+    text-align: center;
+  }
+  .dm-uploader  h3 {
+    width: auto;
+  }
 }
 @media screen and (min-width: 1199px) {
 	.form-v1-content {
