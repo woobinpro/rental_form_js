@@ -26,7 +26,7 @@ $(function(){
         onUploadSuccess: function(id, data){
           console.log('Server Response for file #' + id + ': ' + JSON.stringify(data));
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
-          $('#front_idcard img').attr('src','https://82.165.190.74:3001/images/'+data.name);
+          $('#front_idcard img').attr('src','https://trackyourcamper.com:3001/images/'+data.name);
           $('#front_idcard img').show();
         },
         onUploadError: function(id, xhr, status, message){
@@ -52,7 +52,7 @@ $(function(){
         onUploadSuccess: function(id, data){
           console.log('Server Response for file #' + id + ': ' + JSON.stringify(data));
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
-          $('#back_idcard img').attr('src','https://82.165.190.74:3001/images/'+data.name);
+          $('#back_idcard img').attr('src','https://trackyourcamper.com:3001/images/'+data.name);
           $('#back_idcard img').show();
         },
         onUploadError: function(id, xhr, status, message){
@@ -78,7 +78,7 @@ $(function(){
         onUploadSuccess: function(id, data){
           console.log('Server Response for file #' + id + ': ' + JSON.stringify(data));
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
-          $('#selfie img').attr('src','https://82.165.190.74:3001/images/'+data.name);
+          $('#selfie img').attr('src','https://trackyourcamper.com:3001/images/'+data.name);
           $('#selfie img').show();
         },
         onUploadError: function(id, xhr, status, message){
