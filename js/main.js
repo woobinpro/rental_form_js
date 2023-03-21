@@ -5,7 +5,7 @@ $(function(){
         signaturePad.clear();
     });
     $('#drag-and-drop-zone').dmUploader({ //
-        url: 'https://82.165.190.74:3001/uploadID',
+        url: 'https://82.165.190.74:3001/api/uploadID',
         maxFileSize: 3000000, // 3 Megs 
         onDragEnter: function(){
           // Happens when dragging something over the DnD area
