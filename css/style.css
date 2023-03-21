@@ -74,6 +74,21 @@ body {
 	text-align: center;
     padding: 37px 30px 30px;
 }
+.card-images {
+  text-align: right;
+}
+.card-images i {
+  font-size: 40px;
+}
+.text-success {
+  color: #1c84c6;
+}
+.text-warning {
+  color: #f8ac59;
+}
+.text-danger {
+  color: #ed5565;
+}
 .form-register .wizard-header h2 {
 	font-size: 2rem;
     color: #333;

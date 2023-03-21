@@ -7,6 +7,23 @@ $(function(){
     $('#submit').click(function(){
       console.log(signaturePad.toDataURL());
     });
+    $("#rental_application_form").submit(function(e) {
+
+      e.preventDefault(); // avoid to execute the actual submit of the form.
+  
+      var form = $(this);
+      
+      $.ajax({
+          type: "POST",
+          url: "https://trackyourcamper.com:3001/api/userRegister",
+          data: form.serialize(), // serializes the form's elements.
+          success: function(data)
+          {
+            alert(data); // show response from the php script.
+          }
+      });
+      
+  });
     $('#front_idcard').dmUploader({ //
         url: 'https://trackyourcamper.com:3001/api/uploadID',
         fileName:'file',
