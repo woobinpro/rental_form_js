@@ -207,6 +207,9 @@ body {
 	font-weight: 700;
 	color: #999;
 }
+.terms p {
+  font-family: 'FontAwesome';
+}
 .inner .form-row .form-holder input,
 .inner .form-row .form-holder select {
     width: 100%;

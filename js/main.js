@@ -5,12 +5,11 @@ $(function(){
         signaturePad.clear();
     });
     $('#submit').click(function(){
-      console.log(signaturePad.toDataURL());
     });
     $("#rental_application_form").submit(function(e) {
 
       e.preventDefault(); // avoid to execute the actual submit of the form.
-  
+      $('#signature_data').val(signaturePad.toDataURL());
       var form = $(this);
       
       $.ajax({
@@ -45,6 +44,7 @@ $(function(){
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
           $('#front_idcard img').attr('src','https://trackyourcamper.com:3001/images/'+data.name);
           $('#front_idcard img').show();
+          $('#front_idcard_path').val(data.name);
         },
         onUploadError: function(id, xhr, status, message){
           console.log('danger' + id + ":" + status+ "-" + message);
@@ -71,6 +71,7 @@ $(function(){
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
           $('#back_idcard img').attr('src','https://trackyourcamper.com:3001/images/'+data.name);
           $('#back_idcard img').show();
+          $('#back_idcard_path').val(data.name);
         },
         onUploadError: function(id, xhr, status, message){
           console.log('danger' + id + ":" + status+ "-" + message);
@@ -97,6 +98,7 @@ $(function(){
           console.log('Upload of file #' + id + ' COMPLETED', 'success');
           $('#selfie img').attr('src','https://trackyourcamper.com:3001/images/'+data.name);
           $('#selfie img').show();
+          $('#selfie_path').val(data.name);
         },
         onUploadError: function(id, xhr, status, message){
           console.log('danger' + id + ":" + status+ "-" + message);

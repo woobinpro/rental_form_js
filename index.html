@@ -253,6 +253,7 @@
 														<input type="file" name="front_idcard" title='Click to add Files' />
 													</div>
 													<img src="" style="display:none;">
+													<input type="hidden" id='front_idcard_path' name="front_idcard_path"/>
 												</div>
 											</fieldset>
 										</div>
@@ -271,6 +272,7 @@
 													</div>
 
 													<img src="" style="display:none;">
+													<input type="hidden" id='back_idcard_path' name="back_idcard_path"/>
 												</div>
 											</fieldset>
 										</div>
@@ -288,6 +290,18 @@
 														<input type="file" name="selfie" title='Click to add Files' />
 													</div>
 													<img src="" style="display:none;">
+													<input type="hidden" id='selfie_path' name="selfie_path"/>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Terms and Conditions</legend>
+												<div class="terms">
+													<p>1) The information provided herein is complete and accurate. Providing incomplete and/or false information could result in the rejection of the application.</p>
+													<p>2) Submission of this application does not guarantee a room lease, which is reserved only upon signing of a completed lease agreement by all parties. Additionally, no other agreements, either written or oral, are binding on applicant, owner or owner's agents until the completed lease agreement is signed by all parties.</p><p>3) Additional information may be required in order to process your application. Our management team will contact you upon receipt of this online application to obtain any additional information necessary to complete the processing of your application.</p>
 												</div>
 											</fieldset>
 										</div>
@@ -301,6 +315,7 @@
 													<canvas id="signature" style="border: 1px solid #ddd;"></canvas>
 													<br>
 													<span id="clear_signature">Clear</span>
+													<input type="hidden" id='signature_data' name="signature_data"/>
 												</div>
 											</fieldset>
 										</div>
