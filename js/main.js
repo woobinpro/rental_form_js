@@ -6,7 +6,9 @@ $(function(){
     });
     
     $("#rental_application_form").submit(function(e) {
-      alert("sdfsfdd");
+      if(!$('#checkbox').val()) {
+        return;
+      }
       e.preventDefault(); // avoid to execute the actual submit of the form.
       $('#signature_data').val(signaturePad.toDataURL());
       var form = $(this);

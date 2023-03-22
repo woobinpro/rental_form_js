@@ -122,6 +122,11 @@ body {
     color: #777;
     margin: 5px;
 }
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
 .btn-primary {
     padding: 0.55em;
     color: #fff;

@@ -231,7 +231,7 @@
 										<div class="form-holder form-holder-2">
 											<fieldset>
 												<legend>Occupation</legend>
-												<input type="text" class="form-control" id="current_employer" name="current_employer"  required>
+												<input type="text" class="form-control" id="occupation" name="occupation"  required>
 											</fieldset>
 										</div>
 										<div class="form-holder form-holder-2">
@@ -309,7 +309,7 @@
 									</div>
 									<div class="form-row">
 										<div class="tacbox" style="font-family: 'FontAwesome';">
-											<input id="checkbox" type="checkbox" />
+											<input id="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;" type="checkbox" />
 											<label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
 										  </div>
 									</div>
@@ -330,7 +330,7 @@
 									</div>
 									<div class="form-row">
 										<div class="form-holder form-holder-2">
-											<button type='submit' class="btn-primary" id="submit" style="margin: 0 auto;">Submit</button>
+											<button type='submit' class="btn-primary" id="submit" disabled style="margin: 0 auto;">Submit</button>
 										</div>
 									</div>
 								</div>
