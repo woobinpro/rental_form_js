@@ -4,10 +4,9 @@ $(function(){
     $('#clear_signature').click(function(){
         signaturePad.clear();
     });
-    $('#submit').click(function(){
-    });
+    
     $("#rental_application_form").submit(function(e) {
-
+      alert("sdfsfdd");
       e.preventDefault(); // avoid to execute the actual submit of the form.
       $('#signature_data').val(signaturePad.toDataURL());
       var form = $(this);
