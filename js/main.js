@@ -19,7 +19,7 @@ $(function(){
           data: form.serialize(), // serializes the form's elements.
           success: function(data)
           {
-            alert(data); // show response from the php script.
+            alert("Thank you for filling out your information!"); // show response from the php script.
           }
       });
       
